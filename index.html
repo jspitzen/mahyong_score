@@ -1,42 +1,187 @@
 <!DOCTYPE html>
 <!-- saved from url=(0060)https://getbootstrap.com/docs/4.1/examples/starter-template/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+  <title>Mah Yong scores</title>
 
-    <!-- Custom styles for this template -->
-    <link href="./index_files/starter-template.css" rel="stylesheet">
-  </head>
+  <!-- Bootstrap core CSS -->
+  <link href="./index_files/bootstrap.min.css" rel="stylesheet">
 
-  <body>
+  <!-- Custom styles for this template -->
+  <link href="./index_files/starter-template.css" rel="stylesheet">
+</head>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    </nav>
+<body>
 
-    <main role="main" class="container">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  </nav>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+  <main role="main" class="container">
+    <h2>Mah Yong</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <form>
+          <table class='table'>
+            <tr>
+              <th>Speler 1<br />
+                <div class='form-check form-check-inline'>
+                  <input class='form-check-input' type='radio' name='mahyong' value=0 id='mahyong_0' checked='checked'>
+                  <label class='form-check-label' for='mahyong_0'>Mah Yong</label>
+                </div>
+                <div class='form-check form-check-inline'>
+                  <input class='form-check-input' type='radio' name='oost' value=0 id='oost_0' checked='checked'>
+                  <label class='form-check-label' for='oost_0'>Oost</label>
+                </div>
+              </th>
+              <th>Speler 2<br />
+                <div class='form-check form-check-inline'>
+                  <input class='form-check-input' type='radio' name='mahyong' value=1 id='mahyong_1'>
+                  <label class='form-check-label' for='mahyong_1'>Mah Yong</label>
+                </div>
+                <div class='form-check form-check-inline'>
+                  <input class='form-check-input' type='radio' name='oost' value=1 id='oost_1'>
+                  <label class='form-check-label' for='oost_1'>Oost</label>
+                </div></th>
+                <th>Speler 3<br />
+                  <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='mahyong' value=2 id='mahyong_2'>
+                    <label class='form-check-label' for='mahyong_2'>Mah Yong</label>
+                  </div>
+                  <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='oost' value=2 id='oost_2'>
+                    <label class='form-check-label' for='oost_2'>Oost</label>
+                  </div></th>
+                  <th>Speler 4<br />
+                    <div class='form-check form-check-inline'>
+                      <input class='form-check-input' type='radio' name='mahyong' value=3 id='mahyong_3'>
+                      <label class='form-check-label' for='mahyong_3'>Mah Yong</label>
+                    </div>
+                    <div class='form-check form-check-inline'>
+                      <input class='form-check-input' type='radio' name='oost' value=3 id='oost_3'>
+                      <label class='form-check-label' for='oost_3'>Oost</label>
+                    </div></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input id='player_score_0' type="text" class="form-control" placeholder="Text input" value=10>
+                    </td>
+                    <td>
+                      <input id='player_score_1' type="text" class="form-control" placeholder="Text input" value=100>
+                    </td>
+                    <td>
+                      <input id='player_score_2' type="text" class="form-control" placeholder="Text input" value=50>
+                    </td>
+                    <td>
+                      <input id='player_score_3' type="text" class="form-control" placeholder="Text input" value=0>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id='0_0'>0</td>
+                    <td id='1_0'>0</td>
+                    <td id='2_0'>0</td>
+                    <td id='3_0'>0</td>
+                  </tr>
+                  <tr>
+                    <td id='0_1'>0</td>
+                    <td id='1_1'>0</td>
+                    <td id='2_1'>0</td>
+                    <td id='3_1'>0</td>
+                  </tr>
+                  <tr>
+                    <td id='0_2'>0</td>
+                    <td id='1_2'>0</td>
+                    <td id='2_2'>0</td>
+                    <td id='3_2'>0</td>
+                  </tr>
+                  <tr>
+                    <td id='0_3'>0</td>
+                    <td id='1_3'>0</td>
+                    <td id='2_3'>0</td>
+                    <td id='3_3'>0</td>
+                  </tr>
+                  <tr>
+                    <th id='total_0'>0</th>
+                    <th id='total_1'>0</th>
+                    <th id='total_2'>0</th>
+                    <th id='total_3'>0</th>
+                  </tr>
+                </table>
+              </form>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </main><!-- /.container -->
 
-    </main><!-- /.container -->
+        <!-- Bootstrap core JavaScript
+          ================================================== -->
+          <!-- Placed at the end of the document so the pages load faster -->
+          <script src="./index_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+          <script src="./index_files/popper.min.js"></script>
+          <script src="./index_files/bootstrap.min.js"></script>
+          <script>
+            function arraySum(array_in) {
+              let s = 0;
+              for (i in array_in) {
+                s += i;
+              }
+              return s;
+            };
+            var scores = new Array(4);
+            for (i=0; i<4; i++) {
+              scores[i] = new Array(4);
+            }
+            var raw_scores = new Array(4);
+            var total_scores = new Array(4);
+            var oost = 0;
+            var mahyong = 0;
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./index_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./index_files/popper.min.js"></script>
-    <script src="./index_files/bootstrap.min.js"></script>
-  
+            function calculateScores() {
+              raw_scores = [
+              parseInt($('#player_score_0').val()),
+              parseInt($('#player_score_1').val()),
+              parseInt($('#player_score_2').val()),
+              parseInt($('#player_score_3').val())
+              ];
+              $.each($('form').serializeArray(), function(i, e) {
+                if (e.name == 'mahyong') {
+                  mahyong = parseInt(e.value);
+                }
+                if (e.name == 'oost') {
+                  oost = parseInt(e.value);
+                }
+              });
+              for (i=0; i<4; i++) {
+                total_scores[i] = 0;
+                for (j=0; j<4; j++) {
+                  score = raw_scores[i] - raw_scores[j];
 
-</body></html>
+                  if (i == oost || j == oost) {
+                    score *= 2;
+                  }
+
+                  if (i == mahyong) {
+                    score = Math.max(0, score);
+                  }
+                  if (j == mahyong) {
+                    score = Math.min(0, score);
+                  }
+
+                  scores[i][j] = score;
+                  $('#'+i+'_'+j).html(score);
+                  total_scores[i] += score;
+                }
+                $('#total_'+i).html(total_scores[i]);
+              }
+            }
+
+            $('input').change(calculateScores);
+            calculateScores();
+
+          </script>
+
+        </body></html>
